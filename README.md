@@ -44,7 +44,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   #### Screenshot(s) van de tweede pagina (small screen):
   hier de naam van de pagina  
-  <img src="/images/Detailpagina_Pumpkin_Spice_Naturally_Flavored_Ground.png" width="375px" alt="Detailpagina Smaak Pumpkin spice naturally flavored ground Starbucks>
+  <img src="/images/Detailpagina_Pumpkin_Spice_Naturally_Flavored_Ground.png" width="375px" alt="Detailpagina Smaak Pumpkin spice naturally flavored ground Starbucks">
  
 </details>
 
@@ -57,6 +57,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
+  <ol> 
+  <li>Gebruik van metaforen<br>
+  <li></li>
+  
+  </ol>
 
 </details>
 
