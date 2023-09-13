@@ -36,15 +36,15 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor kick-off werkgroep</summary>
 
   ### Je opdracht:
-  <a href="https://www.ola.nl/home.html">Ola homepagina</a>
+  <a href="https://www.starbucks.com">Starbucks homepagina</a>
 
   #### Screenshot(s) van de eerste pagina (small screen): 
   Homepagina 
-  <img src="/images/Homepagina.png" width="375px" alt="Homepagina van Ola">
+  <img src="/images/Homepagina- Starbucks.png" width="375px" alt="Homepagina van Starbucks">
 
   #### Screenshot(s) van de tweede pagina (small screen):
   hier de naam van de pagina  
-  <img src="/images/Raket pagina.png" width="375px" alt="Detailpagina Raket ijsje">
+  <img src="/images/Detailpagina_Pumpkin_Spice_Naturally_Flavored_Ground.png" width="375px" alt="Detailpagina Smaak Pumpkin spice naturally flavored ground Starbucks>
  
 </details>
 
