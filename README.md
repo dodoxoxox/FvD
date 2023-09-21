@@ -36,14 +36,14 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor kick-off werkgroep</summary>
 
   ### Je opdracht:
-  <a href="https://www.starbucks.com">Starbucks homepagina</a>
+  <a href="https://athome.starbucks.com/">Starbucks At Home homepagina</a>
 
   #### Screenshot(s) van de eerste pagina (small screen): 
-  Homepagina 
-  <img src="/images/Homepagina- Starbucks.png" width="375px" alt="Homepagina van Starbucks">
+  Homepagina <br>
+  <img src="/images/Homepagina- Starbucks.png" width="375px" alt="Homepagina van Starbucks At Home">
 
   #### Screenshot(s) van de tweede pagina (small screen):
-  hier de naam van de pagina  
+  Detailpagina Pumpkin spice naturally flavored ground <br> 
   <img src="/images/Detailpagina_Pumpkin_Spice_Naturally_Flavored_Ground.png" width="375px" alt="Detailpagina Smaak Pumpkin spice naturally flavored ground Starbucks">
  
 </details>
@@ -58,9 +58,16 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
   <ol> 
-  <li>Gebruik van metaforen<br> 
+  <li>Gebruik van metaforen.<br> 
   <img src="/images/Toegankelijksheidtest_1_Content_metafoor_1.png" alt="">
-  <li></li>
+  <li>Worden geen gebruik gemaakt van buttons, maar de linkjes worden zo gestyled dat het eruit ziet als een button.</li>
+  <li>Er is subtiele focus state voor de interactieve elementen. Kleine klik animatie of het wordt grijzig</li>
+  <li>Homepagina heeft geen logische verloop van H2 naar H3 etc.</li>
+  <li>Geen gebruik gemaakt van list elements. Alles is in div'jes gegooid en gestyled.</li>
+  <li>Alt teksten voor afbeeldingen kan beter beschreven worden.</li>
+  <li>Er is geen zichtbare 'skip to main content' link.</li>
+  <li>Kan de tekst niet vergroten naar 200%.</li>
+  <li>Naast kleur word er gebruikt gemaakt van bold en lettertypegrootte om informatie te geven. Kan beter</li>
   
   </ol>
 
@@ -100,12 +107,21 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+Student 1: <b>Laura</b><br><br>
+Feedback
+<br><br><br>
 
+Student 2: <b>Dan</b> <br><br>
+Feedback
+<br><br><br>
+
+Student 3: <b>Diem</b> <br<br>
+Feedback
+<br><br><br>
+
+Student 4: <b>-</b> <br><br>
+Feedback
+<br><br><br>
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
