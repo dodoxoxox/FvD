@@ -3,10 +3,24 @@
 /**************/
 *, *::after, *::before {
   box-sizing:border-box;  
+  margin: 0;
+  padding: 0;
 }
 
+@font-face {
+	font-family: H1;
+	src: url(/fonts/Lander\ Grande\ Regular.otf);
+}
 
+@font-face {
+	font-family: P;
+	src: url(/fonts/SoDoSans-Regular.ttf);
+}
 
+@font-face {
+	font-family: buf;
+	src: url(/fonts/buf_.ttf);
+}
 
 
 
@@ -26,6 +40,286 @@
 /****************/
 /* JOUW STYLING */
 /****************/
+html{
+	min-width: 390px;
+	padding: 0;
 
-/* jouw code */
+}
 
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+p {
+	font-family: P;
+	color: #006241;
+	
+}
+
+button {
+	font-family: P;
+    color: #fefefe;
+    background-color: #006241;
+    text-align: center;
+    padding: 0.9375rem 1.875rem;
+    border-radius: 12.5rem;
+	border: none;
+	margin: 1.25rem;
+	font-size: 1em;
+
+}
+
+img {
+	max-width:100%;
+}
+
+/*Section 1 Banner  */
+main section:nth-child(1) {
+	background-color:#fff;;
+	text-align: center;
+	max-width: 390px;
+
+}
+
+main section:nth-child(1) img {
+	width: 100%;
+	height: auto;
+	max-width: 390px;
+}
+
+main section:nth-child(1) h1 {
+	font-family: H1;
+	color: #1e3932;
+	margin: 0px 0px 30px;
+	text-transform: capitalize;
+	font-size: 3em;
+	font-weight: lighter;
+	padding: 0 1em;
+}
+
+main section:nth-child(1) h2 {
+	font-family:buf;
+	text-transform: uppercase;
+	font-size: 0.7em;
+	letter-spacing: 3px;
+	font-weight: lighter;
+	color: #006241;
+	padding: 1em 3em;
+	line-height: 1.5em;
+}
+ main section:nth-child(1) p {
+	padding: 0 2em;
+	margin: 0;
+	line-height: 2em;
+ }
+
+ /*Section 2*/
+main section:nth-child(2) {
+	background-color:#1e3932; 
+	padding: 4em 1em;
+	text-align: center;
+}
+
+main section:nth-child(2) h2{
+	font-family:buf;
+	text-transform: uppercase;
+	font-size: 0.7em;
+	letter-spacing: 3px;
+	color: #fefefe;
+	padding: 1em 3em;
+	line-height: 1.7em;
+}
+
+main section:nth-child(2) p {
+	color: #fefefe;
+	line-height: 1.5em;
+	padding: 0 1em;
+}
+
+/*Section 3 mini carrousel*/
+main section:nth-child(3) img {
+
+	height: auto;
+	max-width: 390px;
+}
+
+main section:nth-child(3) {
+	background-color:#1e3932; 
+	padding: 0;
+	text-align: center;
+	color: #fefefe;
+	padding-bottom: 8em;
+}
+
+main section:nth-child(3) ul {
+	display: flex;
+	overflow-x: auto;
+	scroll-snap-type: x mandatory;
+	overscroll-behavior: contain auto;
+	-webkit-overflow-scrolling: touch;
+}
+
+main section:nth-child(3) li {
+	width: 100%;
+	scroll-snap-align: center;
+}
+
+main section:nth-child(3) ul li h3{
+	font-family:buf;
+	text-transform: uppercase;
+	font-size: 0.7em;
+	letter-spacing: 3px;
+	color: #fefefe;
+	padding: 3em 0 2em 0;
+	line-height: 1.7em;
+
+}
+
+main section:nth-child(3) ul li h2 {
+	font-family: H1;
+	color: #fefefe;
+	text-transform: capitalize;
+	font-size: 2.5em;
+	font-weight: lighter;
+	padding-bottom: 0.5em;
+}
+
+main section:nth-child(3) ul li p {
+	color: #fefefe;
+	line-height: 1.5em;
+	padding: 0 2em;
+	font-size: 1em;
+}
+
+
+/***********************************/
+/*Section 4 Quiz*/
+/***********************************/
+main section:nth-child(4) {
+	background-color: #d4e9e2;
+	text-align: center;
+	position: relative;
+	padding-bottom: 3em;
+}
+
+main section:nth-child(4) h2 {
+	font-family: H1;
+	color: #1e3932;
+	margin: 0px 0px 30px;
+	font-size: 3em;
+	font-weight: lighter;
+	padding: 0 0.5em;
+}
+
+main section:nth-child(4) h3 {
+	font-family:buf;
+	text-transform: uppercase;
+	font-size: 0.7em;
+	letter-spacing: 3px;
+	color: #006241;
+	padding: 6em 0 2em 0;
+	line-height: 1.7em;
+}
+
+main section:nth-child(4) p {
+	line-height: 1.5em;
+	padding: 3em 2em 1em 2em;
+	font-size: 1em;
+
+}
+
+/**************************************/
+/*Section 5 About Our Story Starbucks*/
+/**************************************/
+main section:nth-child(5) {
+	background-color: #fefefe;
+	text-align: center;
+	position: relative;
+}
+
+main section:nth-child(5) h2 {
+	font-family: H1;
+	color: #1e3932;
+	margin: 0px 0px 30px;
+	font-size: 3em;
+	font-weight: lighter;
+	padding: 0 0.5em;
+}
+
+main section:nth-child(5) h3 {
+	font-family:buf;
+	text-transform: uppercase;
+	font-size: 0.7em;
+	letter-spacing: 3px;
+	color: #006241;
+	padding: 3em 0 2em 0;
+	line-height: 1.7em;
+}
+
+main section:nth-child(5) img:first-of-type {
+	width: 80%;
+	height: auto;
+	max-width: 390px;
+
+}
+
+
+main section:nth-child(5) p:first-of-type {
+	line-height: 1.5em;
+	padding: 2em 2em 0 2em;
+	font-size: 1em;
+}
+
+main section:nth-child(5) p:last-of-type {
+	line-height: 1.5em;
+	padding: 0;
+	font-size: 1em;
+	display: flex;
+	align-items: center;
+	gap: .25em;
+	justify-content: center;
+}
+
+main section:nth-child(5) p:last-of-type img{
+	width: 20px;
+}
+
+
+/**************************************/
+/*Section 6 Products     */
+/**************************************/
+main section:nth-child(6) {
+	background-color: #f2f0eb;
+
+}
+
+main section:nth-child(6) h3 {
+	font-family:buf;
+	text-transform: uppercase;
+	font-size: 0.7em;
+	letter-spacing: 3px;
+	color: #006241;
+	padding: 8em 0 2em 0;
+	line-height: 1.7em;
+	text-align: center;
+}
+
+main section:nth-child(6) h2 {
+	font-family: H1;
+	color: #1e3932;
+	margin: 0px 0px 30px;
+	font-size: 1.5em;
+	font-weight: lighter;
+	padding: 0 0.5em;
+	text-align: center;
+}
+
+main section:nth-child(6) p {
+	text-align: center;
+}
+
+main section:nth-child(6) p:last-of-type {
+	
+}

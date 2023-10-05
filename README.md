@@ -109,27 +109,28 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 Student 1: <b>Laura</b><br><br>
 Feedback
+IS het een article? Veilig in sections doen. Geen classes of div's gebruiken. Niet alle a's hoeven ingevuld te worden. 
 <br><br><br>
 
 Student 2: <b>Dan</b> <br><br>
 Feedback
+Section in sections. Per section helemaal uitwerken.
 <br><br><br>
 
-Student 3: <b>Diem</b> <br<br>
+Student 3: <b>Diem</b> <br><br>
 Feedback
+Sections ipv article. Alt tekst invullen. 
 <br><br><br>
 
-Student 4: <b>-</b> <br><br>
-Feedback
-<br><br><br>
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+Images horen in de html tenzij het achtergrondafbeelding met geen toegevoegde informatie-> dan in css. 
+Aan Sanne vragen hoeveel sections je mag gebruiken voor je website.  
+Alle vormgeving in 1 css bestand. 
+Klein mobiel beginnen. 
+
 
 </details>
 
