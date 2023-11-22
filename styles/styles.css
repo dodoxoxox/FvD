@@ -1,0 +1,243 @@
+/**************/
+/* CSS REMEDY */
+/**************/
+*, *::after, *::before {
+    box-sizing:border-box;  
+    margin: 0;
+    padding: 0;
+  }
+  
+  @font-face {
+      font-family: fancy;
+      src: url(/fonts/Lander\ Grande\ Regular.otf);
+  }
+  
+  @font-face {
+      font-family: P;
+      src: url(/fonts/SoDoSans-Regular.ttf);
+  }
+  
+  @font-face {
+      font-family: buf;
+      src: url(/fonts/buf_.ttf);
+  }
+  
+  
+  
+  
+  /*********************/
+  /* CUSTOM PROPERTIES */
+  /*********************/
+  :root {
+      /* startje */
+      /* --color-text:#111;
+      --color-background:#eee; */
+  
+      --clr-a:#006241;
+      --bg-a: #fefefe;
+  }
+  
+  @media (prefers-color-scheme:dark) {
+      :root {
+          --clr-a: #fefefe; 
+          --bg-a: #006241;
+      }
+  
+  }
+  
+  
+  
+  
+  
+  /****************/
+  /* JOUW STYLING */
+  /****************/
+  html{
+      padding: 0;
+    }
+  
+  ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+     }
+  
+  h1 {
+      font-family: fancy;
+      color: #1e3932;
+      margin: 0px 0px 30px;
+      text-transform: capitalize;
+      font-size: 3em;
+      font-weight: lighter;
+      padding: 0 1em;
+  }
+  
+  h2 {
+      font-family: fancy;
+      color: #1e3932;
+      text-transform: capitalize;
+      font-size: 3em;
+      font-weight: lighter;
+      padding: 0 1em;
+  
+  }
+  
+  h3 {
+      font-family:buf;
+      text-transform: uppercase;
+      font-size: 0.7em;
+      letter-spacing: 3px;
+      font-weight: lighter;
+      color: #006241;
+      padding: 3em;
+      line-height: 1.5em;
+      font-weight: bold;
+  }
+  
+  p {
+      font-family: P;
+      color: #111;
+      padding: 0 2em;
+      margin: 0;
+      line-height: 2em;
+      
+  }
+  
+  /* https://www.a11yproject.com/posts/how-to-hide-content/ */
+  .visually-hidden {
+      clip: rect(0 0 0 0);
+      clip-path: inset(50%);
+      height: 1px;
+      overflow: hidden;
+      position: absolute;
+      white-space: nowrap;
+      width: 1px;
+  }
+  
+  a {
+      font-family: P;
+      text-decoration: none;
+      
+      /*
+      color: var(--clr-a);
+      background-color: var(--bg-a);
+      text-align: center;
+      padding: 1em;
+      border-radius: 12.5rem;
+      border: none;
+      font-size: 1em;
+      margin: 2em;
+      width: 40%;
+      */
+  }
+  
+  img {
+      max-width:100%;
+  }
+
+/**************************************/
+/*Section 1 Banner                    */
+/**************************************/
+main section:nth-child(1) {
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    text-align: center;
+    align-content: center;
+    flex-wrap: wrap;
+
+    background-image: url(/images/ToastedMarshmallowCafeauLait_Mobiel.webp);
+    background-position: center;
+    background-size: cover;
+    padding-top: 20em;
+    padding-bottom: 2em;
+}
+
+main section:nth-child(1) h1 {
+    font-family: buf;
+    color: #006241;
+    font-size: 0.7em;
+    font-weight: bold;
+    letter-spacing: 2px;
+    padding-top: 10em;
+    margin: 0;
+    padding-bottom: 1em;
+}
+
+main section:nth-child(1) h2 {
+    font-size: 2.5em;
+    align-self: center;
+}
+
+main section:nth-child(1) p {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding-top: 4em;
+}
+main section:nth-child(1) p img {
+    width: 1.5em;
+}
+
+main section:nth-child(1) img { 
+    order: -4;
+    width: 100%;
+}
+
+/**************************************/
+/*Section 2 More about the Recipe     */
+/**************************************/
+main section:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 5em 0;
+    background-color: #f2f0eb;
+}
+
+main section:nth-child(2) h2 {
+    font-family: buf;
+    font-size: 0.7em;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #006241;
+    padding-bottom: 2em;
+}
+
+main section:nth-child(2) p {
+    color:#1e3932;
+    line-height: 1.5em;
+}
+
+/**************************************/
+/*Section 3  Benodigdheden            */
+/**************************************/
+main section:nth-child(3) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #1e3932;
+    padding: 5em 0;
+}
+
+main section:nth-child(3) h2 {
+    color: #fefefe;
+    font-family: buf;
+    font-size: 0.7em;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+main section:nth-child(3) section {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+}
+
+main section:nth-child(3) ul {
+    text-align: left;
+}
+
+
