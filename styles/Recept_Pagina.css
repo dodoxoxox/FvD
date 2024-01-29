@@ -1,0 +1,952 @@
+/**************/
+/* CSS REMEDY */
+/**************/
+*, *::after, *::before {
+    box-sizing:border-box;  
+    margin: 0;
+    padding: 0;
+  }
+  
+  @font-face {
+      font-family: fancy;
+      src: url(/fonts/Lander\ Grande\ Regular.otf);
+  }
+  
+  @font-face {
+      font-family: P;
+      src: url(/fonts/SoDoSans-Regular.ttf);
+  }
+  
+  @font-face {
+      font-family: buf;
+      src: url(/fonts/buf_.ttf);
+  }
+  
+  
+  
+  
+  /*********************/
+  /* CUSTOM PROPERTIES */
+  /*********************/
+  :root {
+      /* startje */
+      /* --color-text:#111;
+      --color-background:#eee; */
+  
+      --clr-a:#006241;
+      --bg-a: #fefefe;
+
+      --color-bg-darkonlight:#1e3932;
+
+      --color-p: #fefefe;
+      --color-h2: #006241;
+
+      --clr-scrollbar:#296953;
+      --clr-scrollbar-thumb:#6CA894;
+
+
+  }
+  
+  @media (prefers-color-scheme:dark) {
+      :root {
+          --clr-a: #fefefe; 
+          --bg-a: #006241;
+
+          --color-bg-darkonlight:#fefefe;
+
+          --color-p: #006241;
+          --color-h2:#fefefe;
+
+          --clr-scrollbar: #6CA894;
+          --clr-scrollbar-thumb:#296953;
+      }
+  
+  }
+  
+  
+  
+  
+  
+  /****************/
+  /* JOUW STYLING */
+  /****************/
+  html{
+      padding: 0;
+    }
+  
+  ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+     }
+  
+  h1 {
+      font-family: fancy;
+      color: #1e3932;
+      margin: 0px 0px 30px;
+      text-transform: capitalize;
+      font-size: 3em;
+      font-weight: lighter;
+      padding: 0 1em;
+  }
+  
+  h2 {
+      font-family: fancy;
+      color: #1e3932;
+      text-transform: capitalize;
+      font-size: 3em;
+      font-weight: lighter;
+      padding: 0 1em;
+  
+  }
+  
+  h3 {
+      font-family:buf;
+      text-transform: uppercase;
+      font-size: 0.7em;
+      letter-spacing: 3px;
+      font-weight: lighter;
+      color: #006241;
+      padding: 3em;
+      line-height: 1.5em;
+      font-weight: bold;
+  }
+  
+  p {
+      font-family: P;
+      color: #111;
+      padding: 0 2em;
+      margin: 0;
+      line-height: 2em;
+      
+  }
+  
+  /* https://www.a11yproject.com/posts/how-to-hide-content/ */
+  .visually-hidden {
+      clip: rect(0 0 0 0);
+      clip-path: inset(50%);
+      height: 1px;
+      overflow: hidden;
+      position: absolute;
+      white-space: nowrap;
+      width: 1px;
+  }
+  
+  a {
+      font-family: P;
+      text-decoration: underline;
+      color:var(--clr-a);
+      
+  }
+  
+  img {
+      max-width:100%;
+  }
+
+  ul::-webkit-scrollbar {
+	height: 0.5em;
+	width: 0;
+	background-color: var(--clr-scrollbar);
+}
+
+ul::-webkit-scrollbar-track {
+	margin:.5em;
+}
+
+ul::-webkit-scrollbar-thumb {
+	background-color: var(--clr-scrollbar-thumb);
+	border-radius: 1em;
+}
+
+/**************************************/
+/*    Hoofd Navigatie                 */
+/**************************************/
+body header {
+    padding-top: 1em;
+    padding-bottom: 1em;
+  }
+  
+  body header > ul {
+    display: flex;
+    gap: 0.5em;
+    align-items: center;
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+  
+  body header > ul > li:nth-child(1){
+    width: 50px;
+  }
+
+  body header > ul > li:nth-of-type(1) a {
+    color: none;
+    background-color: none;
+    text-align: center;
+    padding: 0;
+    border-radius: 0;
+    border: none;
+    font-size: 0;
+    margin: 0;
+    text-decoration: none;
+    padding: 0;
+  }
+
+  
+  body header > ul > ul {
+    visibility: hidden;
+    cursor: pointer;
+    width: 100%;
+    gap: 3em;
+    display: flex;
+    justify-content: center;
+  }
+  
+  body header > ul > li:nth-of-type(2) {
+    display: flex;
+    border: 1px grey solid;
+    border-radius: 20px;
+    width: 300px;
+    align-items: center;
+    padding-right: 2em;
+  }
+  
+  body header > ul > li:nth-of-type(2) input {
+    border: 0;
+    height: 2em;
+    width: 100%;
+  }
+  
+  body header > ul > li:nth-of-type(2) img {
+    max-width: 2em;
+    background-color: grey;
+    border-radius: 100%;
+    padding: 0.2em;
+    margin: 0.2em;
+  }
+  
+  body header > ul > li:nth-of-type(3) {
+    height: 2em;
+    width: 2em;
+    margin-left: 1em;
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  
+  body header > ul > li:nth-of-type(3) button {
+    height: 2em;
+    width: 2em;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    cursor: pointer;
+    background-color: white;
+    border: 0;
+    height: fit-content;
+  }
+  
+  body header > ul > li:nth-of-type(3) img {
+    width: 30px;
+  }
+  
+  body header > ul > li:nth-of-type(3) button:nth-of-type(1) {
+    visibility: visible;
+  }
+  
+  body header > ul > li:nth-of-type(3) button:nth-of-type(2) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .hidden {
+    display: none !important;
+  }
+  
+  body nav {
+    width: 100%;
+    height: 100vh;
+    margin-top: 1em;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  body nav > ul:nth-of-type(1) > li {
+    padding-bottom: 1em;
+    padding-right: 2em;
+    padding-left: 1.5em;
+    font-size: 2em;
+    cursor: pointer;
+  }
+  body nav > ul:nth-of-type(1) > li:last-of-type {
+    border-bottom: 1px grey solid;
+  }
+  
+  body nav > ul:nth-of-type(2) {
+    width: 100%;
+    
+  }
+  
+  body nav > ul:nth-of-type(2) > ul {
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  body nav > ul:nth-of-type(2) > ul > li {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    border-bottom: 1px grey solid;
+    padding-left: 1em;
+  }
+  
+  body nav > ul:nth-of-type(2) > ul > li:last-of-type {
+    border-bottom: 0;
+  }
+  
+  body nav > ul:nth-of-type(2) > ul > li > img {
+    height: 6em;
+  }
+  
+  body nav > ul:nth-of-type(2) > ul > li section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  body nav > ul:nth-of-type(2) > ul > li p {
+    color: grey;
+    padding: 0;
+  }
+
+/**************************************************************/
+/*TABLET BREAKPOINT                                           */
+/**************************************************************/
+@media only screen and (min-width: 820px) {
+    /* Header */
+  
+    body header {
+      flex-direction: row;
+    }
+  
+    body nav > ul:nth-of-type(1) {
+      border-right: 1px grey solid;
+    }
+  
+    body header > ul > li:nth-of-type(3) button:nth-of-type(1) {
+      visibility: hidden;
+    }
+  
+    body header > ul > ul {
+      visibility: visible;
+    }
+  
+    body header ul {
+      font-family: P;
+    }
+  
+    body header nav ul li{
+      font-family: fancy;
+      
+    }
+}
+
+/**************************************/
+/*Section 1 Banner                    */
+/**************************************/
+main section:nth-child(1) {
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    text-align: center;
+    align-content: center;
+    flex-wrap: wrap;
+
+    background-image: url(/images/ToastedMarshmallowCafeauLait_Mobiel.webp);
+    background-position: center;
+    background-size: cover;
+    padding-top: 20em;
+    padding-bottom: 2em;
+}
+
+main section:nth-child(1) h1 {
+    font-family: buf;
+    color: #006241;
+    font-size: 0.7em;
+    font-weight: bold;
+    letter-spacing: 2px;
+    padding-top: 10em;
+    margin: 0;
+    padding-bottom: 1em;
+}
+
+main section:nth-child(1) h2 {
+    font-size: 2.5em;
+    align-self: center;
+}
+
+main section:nth-child(1) p {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding-top: 4em;
+}
+main section:nth-child(1) p img {
+    width: 1.5em;
+}
+
+main section:nth-child(1) img { 
+    order: -4;
+    width: 100%;
+}
+/**************************************************************/
+/*TABLET BREAKPOINT                                           */
+/**************************************************************/
+@media only screen and (min-width: 820px) {
+    main section:nth-child(1) {
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    text-align: center;
+    align-content: center;
+    flex-wrap: wrap;
+
+    background-image: url(/images/ToastedMarshmallowCafeauLait.Tablet.jpg.webp);
+    background-position: center;
+    background-size: cover;
+    }
+
+    main section:nth-child(1) h1 {
+        padding: 5em 0 0 0;
+
+    }
+
+    main section:nth-child(1) h2 {
+        padding:0.5em 1.5em 0 1.5em;
+        font-size: 4em;
+    }
+
+    main section:nth-child(1) p {
+        padding: 0 0.5em;
+        align-self: flex-end;
+    }
+} 
+
+/**************************************/
+/*Section 2 More about the Recipe     */
+/**************************************/
+main section:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 5em 0;
+    background-color: #f2f0eb;
+}
+
+main section:nth-child(2) h2 {
+    font-family: buf;
+    font-size: 0.7em;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #006241;
+    padding-bottom: 2em;
+}
+
+main section:nth-child(2) p {
+    color:#1e3932;
+    line-height: 1.5em;
+}
+/**************************************************************/
+/*TABLET BREAKPOINT                                           */
+/**************************************************************/
+@media only screen and (min-width: 820px){
+    main section:nth-child(2) p {
+        padding: 0 9em;
+    }
+}
+
+/**************************************/
+/*Section 3  Benodigdheden            */
+/**************************************/
+main section:nth-child(3) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: var(--color-bg-darkonlight);
+    padding-bottom: 3em;
+}
+
+main section:nth-child(3) h2 {
+    color: var(--color-p);
+    font-family: buf;
+    font-size: 0.7em;
+    font-weight: bold;
+    letter-spacing: 2px;
+    padding-top: 4em;
+}
+
+main section:nth-child(3) table {
+    font-family: P;
+    color: var(--color-p);
+
+    padding: 2em;
+    
+}
+
+main section:nth-child(3) table tr td{
+    padding-top: 0.5em;
+}
+
+main section:nth-child(3) table tr td:nth-of-type(1) {
+    text-align: left;
+    width: 4em;
+}
+
+main section:nth-child(3) table tr td:nth-of-type(2) {
+    text-align: left;
+}
+
+main section:nth-child(3) p {
+    color: var(--color-p);
+    border: solid 1px;
+    border-radius: 50px;
+    padding: 0.5em 2em;
+}
+
+main section:nth-child(3) img {
+    order: -1;
+}
+
+main section:nth-child(3) a {
+    color: var(--color-p);
+}
+/**************************************************************/
+/*TABLET BREAKPOINT                                           */
+/**************************************************************/
+@media only screen and (min-width: 820px) {
+    main section:nth-child(3) {
+        align-items: flex-start;
+        padding-bottom: 8em;
+    }
+
+    main section:nth-child(3) h2 {
+        padding: 9em 0 1em 9em;
+    }
+
+    main section:nth-child(3) table {
+        padding-left: 6em; 
+    }
+
+    main section:nth-child(3) p {
+        margin-left: 6em;
+    }
+
+} 
+
+/**************************************/
+/*Section 4   Recept                  */
+/**************************************/
+main section:nth-child(4) {
+    align-content: center;
+    padding: 2em 0;
+    background-color: var(--bg-a);
+}
+
+main section:nth-child(4) h2 {
+    text-align: center;
+    font-family:buf;
+    text-transform: uppercase;
+    font-size: 0.7em;
+    letter-spacing: 3px;
+    font-weight: lighter;
+    color: var(--color-h2);
+    padding: 3em;
+    line-height: 1.5em;
+    font-weight: bold;
+}
+
+main section:nth-child(4) h3 {
+    text-align: center;
+    font-family: fancy;
+    color: var(--color-bg-darkonlight);
+    text-transform: capitalize;
+    font-size: 2.5em;
+    font-weight: lighter;
+    padding: 0 1em;
+    line-height: 1em;
+}
+
+main section:nth-child(4) h4 {
+    font-family:buf;
+    text-transform: uppercase;
+    font-size: 0.7em;
+    letter-spacing: 3px;
+    font-weight: lighter;
+    color: var(--color-h2);
+
+    line-height: 1.5em;
+    font-weight: bold;
+    text-align: center;
+    padding: 2em 0;
+}
+
+main section:nth-child(4) p {
+    font-size: 1.5em;
+    line-height: 1.5em;
+    color: var(--color-bg-darkonlight);
+}
+
+main section:nth-child(4) ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+main section:nth-child(4) ul li {
+    padding: 3em 0;
+    text-align: center;
+    width: 100%;
+}
+
+/**************************************************************/
+/*TABLET BREAKPOINT                                           */
+/**************************************************************/
+@media only screen and (min-width: 820px) {
+    main section:nth-child(4) {
+        padding-top: 5em;
+    }
+
+    main section:nth-child(4) h3 {
+        font-size: 2em;
+    }
+
+    main section:nth-child(4) ul li {
+        padding: 0 4em;
+    }
+
+    main section:nth-child(4) ul {
+        gap: 5em;
+    }
+
+    main section:nth-child(4) ul li:nth-of-type(5) {
+        padding: 0;
+    }
+
+    main section:nth-child(4) ul li:nth-of-type(5) img {
+        width: 90%;
+    }
+
+    main section:nth-child(4) ul li:nth-of-type(1) {
+        padding-top: 5em;
+    }
+
+
+}
+
+/**************************************/
+/*Section 5   Like het recept         */
+/**************************************/
+main section:nth-child(5) {
+    background-image: url(/images/Like_het_recept-BG.png.webp);
+    background-size: auto;
+    background-position: center;
+    background-color: #1e3932;
+
+    padding: 6em 0 2em 0;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+main section:nth-child(5) h2 {
+    text-align: center;
+    font-family:buf;
+    text-transform: uppercase;
+    font-size: 0.7em;
+    letter-spacing: 3px;
+    font-weight: lighter;
+    color: #fefefe;
+    line-height: 1.5em;
+    font-weight: bold;
+}
+
+main section:nth-child(5) h3 {
+    text-align: center;
+    font-family: fancy;
+    color: #fefefe;
+    text-transform: capitalize;
+    font-size: 2.5em;
+    font-weight: lighter;
+    padding: 0 1em;
+    line-height: 1.2em;
+}
+
+main section:nth-child(5) p {
+    color: #fefefe;
+    text-align: center;
+
+}
+
+main section:nth-child(5) a {
+    background-color: #f2f0eb;
+    padding: 1em 2em;
+    border-radius: 50px;
+    width: 30%;
+
+    align-self: center;
+    text-align: center;
+    margin-top: 5em;
+    text-decoration: none;
+    color: #006241;
+}
+
+/**************************************************************/
+/*TABLET BREAKPOINT                                           */
+/**************************************************************/
+@media only screen and (min-width: 820px) {
+    main section:nth-child(5) {
+        padding-top: 8em;
+    }
+
+    main section:nth-child(5) h3 {
+        padding: 0 5em;
+    }
+
+    main section:nth-child(5) a {
+        margin-top: 4em;
+        max-width: 15%;
+    }
+}
+
+/**************************************/
+/*Section 5   Aanbevolen koffie       */
+/**************************************/
+main section:nth-child(6) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1em 0 3em;
+    gap: 1em;
+
+    background-color: var(--bg-a);
+
+}
+
+main section:nth-child(6) h2 {
+    font-family:buf;
+    text-transform: uppercase;
+    font-size: 0.7em;
+    letter-spacing: 3px;
+    font-weight: lighter;
+    color: var(--color-h2);
+    line-height: 1.5em;
+    font-weight: bold;
+    padding-top: 3em;
+}
+
+main section:nth-child(6) h3 {
+    text-align: center;
+    font-family: fancy;
+    color: var(--color-bg-darkonlight);
+    text-transform: capitalize;
+    font-size: 2em;
+    font-weight: lighter;
+    padding: 0 0.5em;
+    line-height: 1.2em;
+}
+
+main section:nth-child(6) img {
+    order: -1;
+}
+
+main section:nth-child(6) p {
+    color: var(--color-bg-darkonlight);
+}
+
+/**************************************************************/
+/*TABLET BREAKPOINT                                           */
+/**************************************************************/
+@media only screen and (min-width: 820px) {
+    main section:nth-child(6) {
+        display: grid;
+        grid-template-columns: 1fr 50%;
+        grid-template-rows: 5em 1em 15em 5em 5em;
+
+        column-gap: 4em;
+
+    }
+
+    main section:nth-child(6) img {
+        grid-column-start: 1;
+        grid-row-start: 3;
+
+        padding: 0;
+    }
+
+    main section:nth-child(6) h3, p, a {
+        grid-column-start: 2;
+    }
+
+    main section:nth-child(6) h2 {
+        justify-self: start;
+        align-self: start;
+        padding: 0 4em 0 0;
+        text-align: left;
+
+        grid-column-start: 2;
+        grid-row-start: 2;
+    }
+
+    main section:nth-child(6) h3 {
+        justify-self: start;
+        align-self: end;
+        padding: 0 4em 0 0;
+        text-align: left;
+        grid-column-start: 2;
+        grid-row-start: 3;
+        
+    }
+
+    main section:nth-child(6) p {
+        justify-self: start;
+        align-self: center;
+        padding: 0 4em 0 0;
+        text-align: left;
+        grid-column-start: 2;
+        grid-row-start: 4;
+    }
+
+    main section:nth-child(6) a {
+        justify-self: start;
+        align-self: start;
+        padding: 0 4em 0 0;
+        text-align: left;
+        grid-column-start: 2;
+        grid-row-start: 5;
+    }
+}
+
+/**************************************/
+/*Section 7  Recipes caroussel        */
+/**************************************/
+main section:nth-child(7) {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #f2f0eb;
+    align-items: center;
+    padding: 3em 0 3em;
+}
+
+main section:nth-child(7) h2 {
+    font-family:buf;
+    text-transform: uppercase;
+    font-size: 0.7em;
+    letter-spacing: 3px;
+    font-weight: bolder;
+    color:#006241;
+    line-height: 1.5em;
+    font-weight: bold;
+    padding: 5em 0 1em;
+
+}
+
+main section:nth-child(7) h3 {
+    text-align: center;
+    font-family: fancy;
+    color: #1e3932;
+    text-transform: capitalize;
+    font-size: 2em;
+    font-weight: lighter;
+    padding: 0 0.5em;
+    line-height: 1.2em;
+}
+
+main section:nth-child(7) ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    overflow: scroll;
+    scroll-snap-type: x mandatory;
+
+    gap: 2em;
+	width: 100%;
+
+    padding-top: 5em;
+}
+
+main section:nth-child(7) ul li {
+    scroll-snap-align: center;
+	
+	display: flex; 
+	align-items: center;
+	flex-direction:column;
+	text-align: center;
+  
+	flex-shrink:0;
+	width:100%;
+
+    position: relative;
+
+}
+
+main section:nth-child(7) h4 {
+    font-family: P;
+    font-weight: normal;
+    color:#006241;
+    padding: 2em 0 1em;
+}
+
+main section:nth-child(7) h5 {
+    font-family: P;
+    font-weight: lighter;
+    font-size: 1em;
+    color:#006241;
+}
+
+main section:nth-child(7) img {
+    order: -4;
+    width: 90%;
+}
+
+
+main section:nth-child(7) p {
+    display: flex;
+    position: absolute;
+        top: 0.5em;
+        right: 0.5em;
+    
+}
+main section:nth-child(7) p img {
+    width: 1.5em;
+    align-self: center;
+    padding-right: 0.5em;
+}
+
+main section:nth-child(7) ul li:nth-of-type(2) p {
+    color: var(--color-p);
+}
+
+/**************************************************************/
+/*TABLET BREAKPOINT                                           */
+/**************************************************************/
+@media only screen and (min-width: 820px) {
+    main section:nth-child(7) ul li {
+        max-width: 50%;
+    }
+}
+
+
+
+
+
+
+
+
